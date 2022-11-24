@@ -27,9 +27,30 @@ In addition to the semantic HTML elements aforementioned, we ensured our `<img>`
 <img src="./images/portfolio-1.jpeg" alt="screenshot of a website design of two large rows, spanning the full width of its page" />
 ```
 
+---
+
 ## 3. Design a UI without relying solely on colour, so that we don’t exclude colour-blind users
 
+The site design relies on sections with a dark/light contrast between each, rather than colour. The functionality does not rely on colour to differeniate elements. 
+
+For example, the navigation bar uses hover states with a dark to light hover state to inform the user of a link. A pointer is also used to indicate this furhter. 
+
+
+>![](https://i.imgur.com/t1cjITo.png)
+
+inactive hover state link
+
+--
+
+![](https://i.imgur.com/0meEn0i.png)
+
+> active hover state link (plus mouse pointer)
+
+---
+
 ## 4. Ensure our UI has sufficient colour contrast so that everyone can perceive it comfortably
+
+https://contrast-ratio.com/
 
 ## 5. Use various tools to check that a website meets accessibility criteria
 
