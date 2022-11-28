@@ -54,12 +54,30 @@ https://contrast-ratio.com/
 
 ## 5. Use various tools to check that a website meets accessibility criteria
 
+I predominately used Chrome DevTools' [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/#:~:text=It%20has%20audits%20for%20performance,how%20well%20the%20page%20did.) feature for cross-checking the site's accessibility criteria. 
+
+![](https://i.imgur.com/gAaquAw.png)
+
+
+The final score was 95, with room to improve colour contrast on a few elements. 
+
+![](https://i.imgur.com/Pb0qzqr.png)
+
+The report details passing audits, such as proving alt text for images, sequential h1-h6 elements, as well as declaring thwe site's language, to name a few. 
+
+![](https://i.imgur.com/6Cx4LeW.png)
+
+
 ## 6. Ensure a website displays well on screens of different sizes
+
+
 
 ## 7. Use CSS media queries to ensure content is always presented effectively
 
 ## 8. Demonstrate a mobile-first approach to designing a website with a great user experience
 
 ## 9. Create an attractive and accessible colour palette for a project
+
+We determined a colour palette for the project using coolers. 
 
 ## 10. Use CSS variables to apply repeated colours to HTML elements
