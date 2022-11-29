@@ -68,6 +68,14 @@ The report details passing audits, such as proving alt text for images, sequenti
 ![](https://i.imgur.com/6Cx4LeW.png)
 
 
+Towards the latter stages of the project, I used various sites for cross-checking the contrast ratio, as well as good Web Accessibility practice. 
+
+https://webaim.org/resources/contrastchecker/
+and
+https://contrast-ratio.com/
+
+Unfortunately, I did not have time to correct these before the site was submitted. 
+
 ## 6. Ensure a website displays well on screens of different sizes
 
 
@@ -78,6 +86,10 @@ The report details passing audits, such as proving alt text for images, sequenti
 
 ## 9. Create an attractive and accessible colour palette for a project
 
-We determined a colour palette for the project using coolers. 
+We determined a colour palette for the project using coolers. We selected colour matches for various elements to maximise the contrast. 
+
+https://coolors.co/ffffff-313131-e4572e-7fb069-fbaf00
+
+Unfortunately, there were a few missed lower contrast ratios. Notably, the failed audits had a contrast ratio of 2:52:1 (#fff on #7fb069), where the standard for Web Accessibility is 4:5:1.  
 
 ## 10. Use CSS variables to apply repeated colours to HTML elements
