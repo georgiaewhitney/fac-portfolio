@@ -50,7 +50,14 @@ inactive hover state link
 
 ## 4. Ensure our UI has sufficient colour contrast so that everyone can perceive it comfortably
 
-https://contrast-ratio.com/
+We built the site with a customised Coolors palette that has mostly met sufficient colour contrast guidelines for Web Accessibility. 
+
+Most elements meet the ratio of 4:5:1 as advised, though some elements are lower. 
+
+![](https://i.imgur.com/n2bvEMh.png)
+This contrast only reaches 2:5:1, and I didn't fix this before the site was submitted. 
+
+
 
 ## 5. Use various tools to check that a website meets accessibility criteria
 
@@ -78,6 +85,14 @@ Unfortunately, I did not have time to correct these before the site was submitte
 
 ## 6. Ensure a website displays well on screens of different sizes
 
+We used Chrome DevTools' responsive layout/device toolbar to test the site's performance on smaller devices, as well as testing the differences on smaller devices natively. 
+
+![](https://i.imgur.com/JTQHHtm.png)
+
+The website on tablet view.
+
+![](https://i.imgur.com/b5EAGGK.png)
+The website on a size comparable to a Google Pixel 5. 
 
 
 ## 7. Use CSS media queries to ensure content is always presented effectively
