@@ -8,6 +8,18 @@
 
 ## 4. Use the fetch method to make HTTP requests and receive responses
 
+```html!
+function showMovies(url){
+    fetch(url).then(res=>res.json())
+    .then(function(data){
+        if(data.results.length){
+            data.results.forEach(element=>{
+                if(element.poster_path){
+                    const el = document.createElement('div');
+                    const image = document.createElement('img');
+                    const text = document.createElement('p');
+```
+
 ## 5. Configure the options argument of the fetch method to make GET and POST requests
 
 ## 6. Use the map array method to create a new array containing new values
