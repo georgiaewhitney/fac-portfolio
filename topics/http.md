@@ -2,9 +2,21 @@
 
 ## 1. Write code that executes asynchronously
 
+Asynchronous code has real value in providing a seamless experience for the user by moving the order of the single-threaded loop by which JavaScript runs so the user is not left waiting.  
+
+```html!
+function showMovies(url){
+    fetch(url).then(res=>res.json())
+    .then(function(data)
+```
+
 ## 2. Use callbacks to access values that aren’t available synchronously
 
+One common example of asynchronicity in JavaScript is the use of asynchronous callbacks. This is a type of callback function that executes after a specific condition is met and runs concurrently to any other code currently running???
+
 ## 3. Use promises to access values that aren’t available synchronously
+
+Promises are objects that represent the eventual outcome of an asynchronous operation.
 
 ## 4. Use the fetch method to make HTTP requests and receive responses
 
