@@ -4,7 +4,7 @@
 
 Asynchronous code has real value in providing a seamless experience for the user when dealing with HTTP requests as they can take some time. Using asynchronous code here works by moving the order of the single-threaded loop by which JavaScript runs so the user is not left waiting for each response one-by-one.  
 
-```javascript!
+```js
 function showMovies(url){
     fetch(url).then(res=>res.json())
     .then(function(data){
