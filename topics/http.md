@@ -4,7 +4,7 @@
 
 Asynchronous code has real value in providing a seamless experience for the user when dealing with HTTP requests as they can take some time. Using asynchronous code here works by moving the order of the single-threaded loop by which JavaScript runs so the user is not left waiting for each response one-by-one.  
 
-```js
+```js!
 function showMovies(url){
     fetch(url).then(res=>res.json())
     .then(function(data){
@@ -37,7 +37,7 @@ The above `showMovies()` function makes an HTTP request by fetching the data and
 
 Our group chose to work with the TMDB api, along with the Marvel Database api. 
 
-```javascript!
+```js!
 const searchApi = `https://api.themoviedb.org/3/search/movie?&api_key=${myApi}&query=`
 
 ```
@@ -70,7 +70,7 @@ function handleEvents(){
 
 I used the `.appendChild` and `.createElement` methods to append the DOM nodes of data results to be displayed to the user. 
 
-```javascript!
+```js!
 if(data.results.length){
             data.results.forEach(element=>{
                 if(element.poster_path){
@@ -119,7 +119,7 @@ The CSS is organised by its styled elements. Here is a snippet of the film info 
 
 Again, this ensures consistency in film display - with its unique content filled in by JavaScript functionality. 
 
-```javascript!
+```js!
 function showDetails(element){
     body.style.overflow ="hidden"
     filmInfoPanel.style.display ="flex";
@@ -142,7 +142,7 @@ function showDetails(element){
 
 We faced an issue where our two APIs were not displaying a paired set of fetched results. To work out the issue, we used `console.log()` to ensure the data submitted was received. 
 
-```javascript!
+```js!
 console.log(title);
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
