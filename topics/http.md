@@ -2,25 +2,9 @@
 
 ## 1. Write code that executes asynchronously
 
-Asynchronous code has real value in providing a seamless experience for the user by moving the order of the single-threaded loop by which JavaScript runs so the user is not left waiting.  
+Asynchronous code has real value in providing a seamless experience for the user when dealing with HTTP requests as they can take some time. Using asynchronous code here works by moving the order of the single-threaded loop by which JavaScript runs so the user is not left waiting for each response one-by-one.  
 
-```html!
-function showMovies(url){
-    fetch(url).then(res=>res.json())
-    .then(function(data)
-```
-
-## 2. Use callbacks to access values that aren’t available synchronously
-
-One common example of asynchronicity in JavaScript is the use of asynchronous callbacks. This is a type of callback function that executes after a specific condition is met and runs concurrently to any other code currently running???
-
-## 3. Use promises to access values that aren’t available synchronously
-
-Promises are objects that represent the eventual outcome of an asynchronous operation.
-
-## 4. Use the fetch method to make HTTP requests and receive responses
-
-```html!
+```javascript!
 function showMovies(url){
     fetch(url).then(res=>res.json())
     .then(function(data){
@@ -31,6 +15,25 @@ function showMovies(url){
                     const image = document.createElement('img');
                     const text = document.createElement('p');
 ```
+
+## 2. Use callbacks to access values that aren’t available synchronously
+
+Callback functions are passed into another function whereby the callback will be called upon at the appropriate time. 
+
+As with the `showMovies()` function above
+
+## 3. Use promises to access values that aren’t available synchronously
+
+Promises are objects that represent the eventual outcome of an asynchronous operation.
+
+As learnt in the [promises workshop](https://learn.foundersandcoders.com/workshops/promise-practice/) as part of this module:
+> Promises make it easier to run code in sequence. A promise object’s .then method returns a new promise that resolves with whatever value you returned from the callback you passed in.
+
+
+
+## 4. Use the fetch method to make HTTP requests and receive responses
+
+
 
 ## 5. Configure the options argument of the fetch method to make GET and POST requests
 
@@ -51,3 +54,13 @@ function showMovies(url){
 ## 13. Debug client side JS in our web browser
 
 ## 14. Use console.log() to help us debug our code
+
+We faced an issue where our two APIs were not displaying a paired set of fetched results. To work out the issue, we used `console.log()` to ensure the data submitted was received. 
+
+```javascript!
+console.log(title);
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    handleEvents();
+})
+```
