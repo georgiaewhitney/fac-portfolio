@@ -37,7 +37,7 @@ The above `showMovies()` function makes an HTTP request by fetching the data and
 
 Our group chose to work with the TMDB api, along with the Marvel Database api. 
 
-```js!
+```js
 const searchApi = `https://api.themoviedb.org/3/search/movie?&api_key=${myApi}&query=`
 
 ```
@@ -65,6 +65,15 @@ function handleEvents(){
 ## 7. Use the filter array method to create a new array with certain values removed
 
 ## 8. Access DOM nodes using a variety of selectors
+
+We used a range of selectors to access DOM nodes. 
+
+```js    
+const searchHub = document.getElementById('search-hub');
+const resultsHub = document.getElementById('results-hub');
+const btn = document.getElementById('btn');
+```
+
 
 ## 9. Add and remove DOM nodes to change the content on the page
 
