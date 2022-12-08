@@ -6,7 +6,7 @@ Using semantic HTML elements aids accessibility by better representing the funct
 
 Our project used semantic HTML elements instead of more generic elements like so:
 
-```html:
+```html
 <header>
 <nav></nav>
 </header>
@@ -23,7 +23,7 @@ Users can determine the purpose of our elements at a glance. Here we used `<head
 
 In addition to the semantic HTML elements aforementioned, we ensured our `<img>` elements included alt-text and used aria parameters for elements in the form that would otherwise be anonymous. 
 
-```html!
+```html
 <img src="./images/portfolio-1.jpeg" alt="screenshot of a website design of two large rows, spanning the full width of its page" />
 ```
 
