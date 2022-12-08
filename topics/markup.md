@@ -6,7 +6,7 @@ Using semantic HTML elements aids accessibility by better representing the funct
 
 Our project used semantic HTML elements instead of more generic elements like so:
 
-```html
+```html:
 <header>
 <nav></nav>
 </header>
@@ -23,7 +23,7 @@ Users can determine the purpose of our elements at a glance. Here we used `<head
 
 In addition to the semantic HTML elements aforementioned, we ensured our `<img>` elements included alt-text and used aria parameters for elements in the form that would otherwise be anonymous. 
 
-```html
+```html!
 <img src="./images/portfolio-1.jpeg" alt="screenshot of a website design of two large rows, spanning the full width of its page" />
 ```
 
@@ -97,14 +97,44 @@ The website on a size comparable to a Google Pixel 5.
 
 ## 7. Use CSS media queries to ensure content is always presented effectively
 
+We used CSS media queries to ensure our site adapts to different screen sizes with ease. 
+
+```css    
+@media only screen and (max-width: 760px) {
+  #portfolio {
+    padding: 1.5rem 0 0 0;
+  }
+```
+
+```css    
+@media only screen and (max-width: 760px) {
+  #quotes-section content {
+    padding: 1.875rem .625rem;
+  }
+```
+
+
 ## 8. Demonstrate a mobile-first approach to designing a website with a great user experience
+
+We demonstrated a mobile-first approach by ensuring our page layouts, design elements (navigation bars, font size, and section elements), and buttons adjust with ease between display and use on larger screens as well as smaller mobile ones. 
+
+They resize automatically accordingly by using media queries as seen above, as does font size by using responsive font-sizing, such as `rem`.
+
+```css    
+ font-size: 1.125rem;
+```
+
 
 ## 9. Create an attractive and accessible colour palette for a project
 
-We determined a colour palette for the project using coolers. We selected colour matches for various elements to maximise the contrast. 
+We determined a colour palette for the project using [coolers](https://https://coolors.co/ffffff-313131-e4572e-7fb069-fbaf00). We selected colour matches for various elements to maximise the contrast. 
 
-https://coolors.co/ffffff-313131-e4572e-7fb069-fbaf00
+#ffffff #313131 #e4572e #7fb069 #fbaf00
 
 Unfortunately, there were a few missed lower contrast ratios. Notably, the failed audits had a contrast ratio of 2:52:1 (#fff on #7fb069), where the standard for Web Accessibility is 4:5:1.  
 
 ## 10. Use CSS variables to apply repeated colours to HTML elements
+
+We didn't use CSS variables in this instance, but would have helped in our case of using a rigid colour palette. 
+
+This could be implemented using the `var(--name, value)` function within CSS. 
