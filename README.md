@@ -1,5 +1,5 @@
-# fac-portfolio
-A portfolio of my learnings through the pre-Apprentice course of FAC26
+# FAC26 Skills Bootcamp Portfolio
+A portfolio of my learnings through the pre-Apprentice Skills Bootcamp for FAC26
 
 ## Topics
 
